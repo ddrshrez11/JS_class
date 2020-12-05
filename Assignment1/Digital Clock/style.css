@@ -1,0 +1,13 @@
+body{
+    /* background-color: rgb(255, 255, 255); */
+    text-align: center;
+}
+
+#clock{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 40px;
+    background-color: rgb(196, 195, 195);
+    margin: 20px 620px;
+    padding: 10px;
+    border-radius: 10px;
+}

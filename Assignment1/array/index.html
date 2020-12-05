@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="disp"></div>
+
+    <button id="remv" onclick="removektm()">Remove Kathmandu</button><br><br>
+    
+    <label> Add Two Cities:</label>
+    <input type="text" class="form-inline" id='city1'>
+    <input type="text" class="form-inline" id='city2'>
+    <button id="addcity" onclick="addcity()">Add Cities</button>
+    
+    <div id="result"></div>
+
+    <script>
+        var a = ["Biratnagar", "Lalitpur", "Patan", "Kathmandu","Pokhara","Palpa"]
+        document.getElementById('disp').innerHTML = a ;
+        
+        function removektm(){
+            var b = a;
+            let ind = b.findIndex(findKTM)?b.findIndex(findKTM): null;
+            if (b[ind] == "Kathmandu"){
+                b.splice(ind,1);
+                a.splice(ind,1);
+                document.getElementById('result').innerHTML = b;
+            }
+            else{
+                document.getElementById('result').innerHTML = "Not Found";
+            }
+        }
+
+        function findKTM(b){
+            return b == 'Kathmandu';
+        }
+
+        function addcity(){
+            var city1 = document.getElementById('city1').value;
+            var city2 = document.getElementById('city2').value;
+            if (city1 == ''){
+                a.push(city2);
+            }
+            else if (city2 == ''){
+                a.push(city1);
+            }
+            else{
+                a.push(city1,city2);
+            }
+            document.getElementById('result').innerHTML = a;
+        }
+    </script>
+</body>
+</html>

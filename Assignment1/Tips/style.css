@@ -1,0 +1,22 @@
+body{
+    font-size: 20px;
+    background-color: slategray;
+    text-align: center;
+}
+div#Calculator{
+    background-color: white;
+    text-align: center;
+    margin: 100px 450px;
+    padding: 20px;
+}
+h1{
+    margin-bottom: 30px;
+}
+button{
+    padding: 10px 20px;
+    font-size: 15px;
+    background-color: cadetblue;
+    font-weight: bold;    
+    border: 0;
+    border-radius: 5px;
+}

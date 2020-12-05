@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id='Calculator'>
+        <h1>Tip Calculator</h1>
+        <label>Bill Amount: </label>
+        <input class="form-inline" id="billamt" type="number" placeholder="Enter Bill Amount"><br><br>
+        <label>Tip Percentage: </label>
+        <input class="form-inline" id="tipPerc" type="number" placeholder="Enter Tip Percentage"><br><br><br>
+        <button value="calculate" onclick="calc()">Calculate</button><br><br><br>
+        <label>Tip Amount: </label><span id="tipamt">0.00</span><br><br>
+        <label>Total Amount: </label><span id="totamt">0.00</span><br><br>
+    </div>
+</body>
+</html>
